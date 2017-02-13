@@ -27,7 +27,7 @@ var setCurrentDogs = function(currentDogs){
 
     if(currentDogs > 50){
 
-        console.log("No more than 50 dogs!");
+        console.log("No more than 50 dogs in the shelter!");
     }else if (currentDogs < 0){
 
         console.log("Less than 0 dogs");
