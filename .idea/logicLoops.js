@@ -6,7 +6,7 @@
 //Logical Operators : Tire Pressure
 
 var carTires = [4];
-var userName = prompt("What is your name?");
+var userName = prompt("Please start. What is your name?");
 
 
 function validateName() {
