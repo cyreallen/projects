@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="JS/data.js"></script>
+    <script type="text/javascript" src="JS/json_weather.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1 id="header">JSON!</h1>
+
+<script>
+
+    var obj = JSON.parse('{"code": 30, "date":"17 Oct 2014", "day": "Fri", "high": 80, "low":62, "text":"Sunny"}');
+    var obj1 = JSON.parse('{"code": 30, "date":"18 Oct 2014", "day": "Sat", "high": 82, "low":63, "text":"Partly Cloudy"}');
+    var obj2 = JSON.parse('{"code": 30, "date":"19 Oct 2014", "day": "Sun", "high": 85, "low":65, "text":"Partly Cloudy"}');
+
+    document.getElementById("header").innerHTML = "Today is " + obj.day + "." + " " + "The high is " + " " + obj.high + "."+ " " + "The low is " + " " +obj.low + "." + " " +"It will be " + " " + obj.text;
+    //document.getElementById("header").innerHTML = "Today is " + obj1.day + "." + " " + "The high is " + " " + obj1.high + "."+ " " + "The low is " + " " +obj1.low + "." + " " +"It will be " + " " + obj1.text;
+    //document.getElementById("header").innerHTML = "Today is " + obj2.day + "." + " " + "The high is " + " " + obj2.high + "."+ " " + "The low is " + " " +obj2.low + "." + " " +"It will be " + " " + obj2.text;
+
+</script>
+
+<script type="text/javascript" src="JS/main.js"></script>
+</body>
+
+</html>
